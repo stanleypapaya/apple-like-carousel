@@ -1,0 +1,85 @@
+body{
+    color: #444444;
+    font-size: 14px;
+    background: #f2f2f2;
+    font-family: Times, 'Times New Roman', serif;
+}
+
+#main{
+    margin: 15px auto;
+    text-align: center;
+    width: 920px;
+    position: relative;
+}
+
+h1{
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Gallery styles*/
+
+#gallery{
+    box-shadow: 0 0 3px #AAAAAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid white;
+    background: url("./img/panel.jpg") repeat-x bottom center #ffffff;
+    width: 920px;
+    overflow: hidden;
+}
+
+#slides{
+    height: 400px;
+    /* jquery will change the width */
+    width: 920px;
+    overflow: hidden;
+}
+
+.slide{
+    float: left;
+}
+
+#menu{
+    height: 45px;
+}
+
+li{
+    width: 60px;
+    display: inline-block;
+    height: 45px;
+    overflow: hidden;
+}
+
+li.inact:hover{
+    background: url("./img/pic_bg.png") repeat;
+}
+
+li.active, li.active:hover{
+    background: url("./img/active_bg.png") no-repeat;
+}
+
+li.active a{
+    cursor: default;
+}
+
+.fbar{
+    width: 2px;
+    background: url("./img/divider.png") no-repeat right;
+}
+
+li a{
+    display: block;
+    background: url("./img/divider.png") no-repeat right;
+    height: 35px;
+    padding-top: 10px;
+}
+
+a img{
+    border: none;
+}
